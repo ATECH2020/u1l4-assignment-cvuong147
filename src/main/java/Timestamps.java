@@ -14,10 +14,12 @@ class Timestamps {
         int minutes2 = scanner.nextInt();
         int seconds2 = scanner.nextInt();
 
+        int totalHours = hours2 - hours1;
+        int totalMinutes = minutes2 - minutes1;
+        int totalSeconds = seconds2 - seconds1;
 
-        /*
-         *  your code goes here
-         */
+        int total = (totalHours*3600) + (totalMinutes*60) + totalSeconds;
+        System.out.print(total);
 
 
         // closing the scanner object
